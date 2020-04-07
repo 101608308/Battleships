@@ -16,6 +16,7 @@ public class SeaGrid : ISeaGrid
     private const int _WIDTH = 10;
     private const int _HEIGHT = 10;
 
+    private  _gameTiles[,] Tile = new _gameTiles[Width -1, Height -1];
     private Dictionary<ShipName, Ship> _Ships;
     private int _ShipsKilled = 0;
     public event EventHandler Changed;
